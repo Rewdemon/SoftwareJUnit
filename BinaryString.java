@@ -10,11 +10,11 @@ public class BinaryString {
 		bits = new char[numberofBits];
 		Random rnd = new Random();
 
-		for (int i = 0; i<numberofBits;i++){
+		for (int i = 0; i<numberofBits; i++){
 			if(rnd.nextDouble()< 0.5)
-				bits[i] = 1;
+				bits[i] = '1';
 			else
-				bits[i] = 0;
+				bits[i] = '0';
 		}
 	}
 
@@ -49,10 +49,10 @@ public class BinaryString {
 	public String toString() {
 		String result = "";
 		for (int i = 0; i < bits.length; i++){
-			if(bits[i] == 1)
-				result += 1;
+			if(bits[i] == '1')
+				result += '1';
 			else
-				result += 0;
+				result += '0';
 		}
 		return result;
 	}
