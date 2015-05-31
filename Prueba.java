@@ -30,4 +30,11 @@ public class Prueba {
 		bitset3.set(1, '1');
 		assertEquals('1', bitset3.get(1));
 	}
+	
+	@Test(expected = BinaryStringException.class)
+	public void testGetOutOfLimitBit(){
+		bitset4.get(56);
+	}
+	
+	
 }
