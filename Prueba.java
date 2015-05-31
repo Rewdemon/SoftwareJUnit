@@ -24,4 +24,10 @@ public class Prueba {
 		assertEquals(10, bitset1.length());
 		assertEquals(10, bitset2.length());
 	}
+	
+	@Test
+	public void testSetBit(){
+		bitset3.set(1, '1');
+		assertEquals('1', bitset3.get(1));
+	}
 }
